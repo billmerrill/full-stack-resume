@@ -1,0 +1,38 @@
+/* overview */
+/*html { font-family: 'IM Fell Great Primer', serif; }*/
+html { font-family: 'Times', serif;}
+body { width: 40em;
+       margin: 0 auto;
+       padding: 0;}
+article img {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   max-width: 100%;
+}
+
+/* letter */
+section#letter p {
+    font-size: 18px
+}
+
+/* resume */
+.experience-heading {
+    display: flex;
+    align-content: space-around;
+    width: 100%;
+
+    font-weight: bold;
+}
+
+.experience-position {
+    margin-left: 0px;
+    margin-right: auto:
+}
+
+.experience-duration {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+
+/* examples */
