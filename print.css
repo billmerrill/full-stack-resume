@@ -1,0 +1,74 @@
+/* printing */
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+    body {
+		font-family: Georgia, serif;
+        font-size: 12px;
+		width: 550px;
+		margin: 20mm auto;
+    }
+
+	.click-link {
+		display: none;
+	}
+	.show-link {
+		display: inline;
+	}
+
+	nav {
+		display: none;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		color: #000;
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	#letter, #exmaples {
+		font-size: 14px;
+	}
+
+	#resume h3 {
+		margin: 0px;
+		font-size: 20px;
+	}
+
+	.experience {
+		margin-top: 10px;
+	}
+
+	section#application {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		border-bottom: 0px;
+	}
+
+    article {
+        page-break-after: always;
+		margin-bottom: 0px;
+    }
+
+	section {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+
+
+
+
+}
