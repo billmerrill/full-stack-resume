@@ -4,12 +4,16 @@
 <head>
     <title>Bill Merrill for Senior Front-End Web Developer</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=660">
+    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
     <meta name="description" content="Bill Merrill's applicaiton to The Omni Group's posting for a Senior Front-End Web Developer.">
 
 
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen,print" charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+
 
     <style type="text/css">
     </style>
@@ -17,19 +21,22 @@
 
 </head>
 <body>
-    <h1>Bill Merrill's Application to The Omni Group</h1>
+    <header>
+        <h1>Bill Merrill's Application<br>to The Omni Group</h1>
+    </header>
 
     <nav>
-        <ol style="lower-roman">
+        <ol style="style: lower-roman">
             <li><a href="#letter">Introductory Letter</a></li>
             <li><a href="#resume">Résumé</a></li>
             <li><a href="#examples">Example Work</a>
                 <ol>
                     <li><a href="#topophile">Topophile</a></li>
+                    <li><a href="#launchpadcentral">LaunchPad Central</a></li>
                     <li><a href="#commoncycle">Common Cycle</a></li>
                     <li><a href="#phonedin">Phoned In</a></li>
                     <li><a href="#fourohtwo">402 Pauline Blvd</a></li>
-                    <li><a href="#app">This Application</a></li>
+                    <li><a href="#application">This Application</a></li>
                 </ol>
             </li>
 
@@ -44,7 +51,7 @@
         </p>
 
         <p>
-        I started my career as the primary developer creating the HTML-based product interfaces for network security startup Arbor Networks.  Since then I have developed ad and analytics platforms for millions of European IPTV viewers at Zattoo, worked in a small team to create a publishing platform for Reuters, developed web-based educational materials for MySQL, and worked with many entrepreneurs to create web products to bring their ideas to fruition.
+        I started my career as the primary developer creating the HTML-based product interfaces for network security startup Arbor Networks.  Since then I have developed ad and analytics platforms for millions of European IPTV viewers at Zattoo, worked in a small team to create a publishing platform for Reuters, developed web-based educational materials for MySQL AB, and worked with many entrepreneurs to create web products to bring their ideas to fruition.
         </p>
 
         <p>
@@ -76,13 +83,13 @@
         <dd>HTML; CSS, SCSS;  Javascript ES5 (learning 6)</dd>
 
         <dt>Javascript</dt>
-        <dd>Bootstrap, AngularJS, jQuery, jslint</dd>
+        <dd>Bootstrap, AngularJS, jQuery, jslint, bower, npm</dd>
 
         <dt>App Servers</dt>
-        <dd>Servers: Apache2, nginx; Python: Django, Cherrypy; PHP: Symfony, WordPress</dd>
+        <dd>Servers: Apache, NGINX; Python: Django, Cherrypy; PHP: Symfony, WordPress</dd>
 
         <dt>Infrastructure</dt>
-        <dd>Source Control: Git, SVN; DB: SQL and Key-based;
+        <dd>Source Control: Git, SVN; Databases: SQL and Key-based;
         	Automation: Jenkins, Fabric, grunt, gulp, make</dd>
     </dl>
     </p>
@@ -91,7 +98,7 @@
 
     <div class="experience">
         <div class="experience-heading">
-            <div class="experience-position">Founder, Topophile.COM</div>
+            <div class="experience-position">Founder, Topophile.com</div>
             <div class="experience-duration">OCT 2014 To Present</div>
         </div>
         <p>
@@ -222,12 +229,17 @@
     <article id="examples">
     <h2>Example Work</h2>
 
-    <section>
+    <section id="topophile">
         <h3>Topophile</h3>
-        <a href="http://topophile.com">website</a>
+        <a class="click-link" href="http://topophile.com">Visit Topophile.com</a>
+        <span class="show-link">http://topophile.com</span>
+        <figure>
         <a href="http://topophile.com">
-            <img src="assets/topophile.png" alt="Topophile's Model Builder">
+            <img src="assets/topophile.png" alt="A view of the Topophile Modeler building web page in broswer">
         </a>
+            <figcaption>Image: The Topophile Model Builder starts with finding the right location.</figcaption>
+        </figure>
+
 
         <p>
             Topophile is a hobby business I’ve created to explore geographical data and geo-programming.  The website gives a person familiar with online tools like MapQuest or Google Maps tools to 3D print custom models of the Earth’s surface.  I am responsible for both the front and backend of the website and I’ll take this opportunity to talk about a couple points in the front-end.
@@ -237,19 +249,19 @@
             The landing page, the first thing most users will see, was the last thing I completed before the initial launch.  While the primary app did not work on mobile in 2014 (I’m now excited to see WebGL has become standard on iOS Safari and I look forward to improving the model builder for mobile) I did make sure the page was responsive and looked good on smart phone browsers.
         </p>
 
-        <h1>
-        [ INSERT Responsive Landing Page Image]
-        [ Caption: Showing the Topophile landing page in desktop and smartphone views ]
-    </h1>
+            <figure>
+            <img src="assets/responsive-landing.png" alt="Showing the landing page in desktop and iPhone display modes using Safari dev tools">
+            <figcaption>Image: Using development tools to view the Topophile landing page in desktop and iPhone views.</figcaption>
+        </figure>
 
         <p>
             The model builder has three steps, the first is exploring terrain.  Rather than attempt a VR-like experience, I strove to use a familiar tiled web map and show the terrain related to selected areas.  On the left a person searches for a feature and selects an area on the map, on the right a low-resolution model of the terrain is quickly displayed.  I wanted clarity and speed for this step as users spend some time perfecting their selection.
         </p>
 
-        <h1>
-            [ INSERT Terrain search Image]
-        [Caption: Animation, the process of searching and refining terrain for a model]
-    </h1>
+        <figure>
+            <img src="assets/terrain-search.gif" alt="Animation showing search and exploration of Mt. Rainier's elevation.">
+            <figcaption>Animation: Users can query the elevation of an area by searching and selecting in standard web map.</figcaption>
+        </figure>
 
         <p>
             I found communicating the size of printed model to be very important as people decided to purchase.  I started by selecting three standard sizes for a model and displayed the height, width, and depth of a model textually. Going further I wanted to show an object a person might have handy for comparison.  I chose a US dollar bill and a Euro note and added them to the 3D scene.  I hoped that seeing a object the could hold in real life might help them image the size of a plastic printed model.
@@ -259,23 +271,25 @@
             In testing, I found people were reluctant to click the buttons. They thought the buttons were related to the purchase price rather than the size of the model.  The next time I work on this element I will seek better solutions.
         </p>
 
-        <h1>[INSERT Size Compare Image]
-        [Caption: Animation, comparing different size models with real world objects]
-    </h1>
+        <figure>
+            <img src="assets/compare-size.gif" alt="Comparing a mountain model to a dollar bill from mulitple angles">
+            <figcaption>Animation: Users can compare their virtual model to an object they might have on hand, a dollar bill.</figcaption>
+        </figure>
 
         <p>
             I made a simple and I think beautiful clock animation using CSS to show the steps of unknowable duration that lead from a person designing a model to being able to purchase it from my 3D printing vendor.  While functionally no different than a spinner, I liked the visual representation of the steps setting up expectations and letting you know something’s still happening.
         </p>
 
 
-        <h1>
-            [INSERT Clock Image]
-        [Caption: Animation: Waiting for a model to be ready to be purchasable.]
-        <?h1>
+        <figure>
+            <img src="assets/upload-clock.gif" alt="Simplistic clocks for file upload, file processing, and completion animate in turn.">
+            <figcaption>Animation: Simplified clocks are used to indicate progress is being made.</figcaption>
+        </figure>
+
 
     </section>
 
-    <section>
+    <section id="launchpadcentral">
         <h3>LaunchPad Central Video Classroom</h3>
         <p>
         I created these wireframes in response to the first discussion of a video classroom for Launchpad Central.  In the discussion we identified primary users and their goals.  We had lots of ideas of what could happen, and some discussion of a minimum interface.  These diagrams were more specific than our discussions and helped ground our questions about specific capabilities.  I have used Omnigraffle for wireframing for most of my career, it is invaluable.
@@ -289,49 +303,66 @@
             I later implemented this front-end application using bootstrap and AngularJS backed by the Youtube API and our own use behavior tracking.
         </p>
 
-        [INSERT Wireframes]
+        <figure>
+            <img src="assets/lpc-completion-report.png" alt="A grid of green and red indicators showing per student team, the completion of viewing required videos for each week.">
+            <figcaption>Image: Instructors would checking this screen before class to confirm all teams have done the assigned viewings.</figcaption>
+        </figure>
 
-    <section>
+        <figure>
+            <img src="assets/lpc-video-classroom.png" alt="A screen showing modules to be watched, the progress made so far, and a video player">
+            <figcaption>Image: Students would use this screen to watch coursework and check their progress on assignments.</figcaption>
+        </figure>
+    </section>
+
+    <section id="commoncycle">
         <h3>Common Cycle</h3>
-        <a href="http://commoncycle.org">website</a>
-        <a href="http://commoncycle.org">
-            <img src="assets/commoncycle.png" alt="Common Cycle's Front Page">
-        </a>
+        <a class="click-link" href="http://commoncycle.org">View Common Cycle's Website</a>
+        <span class="show-link">http://commoncycle.org</span>
+        <figure>
+            <a href="http://commoncycle.org">
+                <img src="assets/commoncycle.png" alt="Common Cycle's Front Page in a broswer">
+            </a>
+            <figcaption>Image: A view of the Common Cycle webpage.</figcaption>
+        </figure>
         <P>
         I created a custom HTML and PHP blog theme for the bicycle repair collective I helped form in Ann Arbor, Michigan.  The website is intentionally simple as the groups membership is a constantly evolving volunteer corps.  Were I to re-implement this now I would include a responsive layout for mobile device users.
         </p>
     </section>
-    <section>
+    <section id="phonedin">
         <h3>Phoned In</h3>
-        <a href="http://monkey.org/~bill/pi/index.php?offset=101">website</a>
-        <a href="http://monkey.org/~bill/pi/index.php?offset=101">
-            <img src="assets/phonedin.png" alt="Phoned In's image grid">
-        </a>
+        <a class="click-link" href="http://monkey.org/~bill/pi/index.php?offset=101">Check out Phoned In</a>
+        <span class="show-link">http://monkey.org/~bill/pi/index.php?offset=101</span>
+        <figure>
+            <a href="http://monkey.org/~bill/pi/index.php?offset=101">
+                <img src="assets/phonedin.png" alt="Phoned In's image grid in a browser window">
+            </a>
+            <figcaption>Image: Phoned In's time grid with time moving forward similar to a wall calendar.</figcaption>
+        </figure>
         <p>
             Phoned In is my attempt to create a sense of time and memory with my photos.  Built in 2005, I posted photos from my cameraphone and displayed them in a calendar-like format.  I wrote server software receiving MMS photos in Python and calendar grid display and backing database in PHP. The latest photos are always in the lower right and the past is back to the left.  I no longer post to Phoned In but still browse it.
         </p>
     </section>
-    <section>
+    <section id="fourohtwo">
         <h3>402 Pauline Blvd</h3>
-        <a href="http://monkey.org/~bill/402pauline">website</a>
-        <a href="http://monkey.org/~bill/402pauline">
-            <img src="assets/402.png" alt="The front of the house with bushes.">
-        </a>
+        <a class="click-link" href="http://monkey.org/~bill/402pauline">Read about my dear old house</a>
+        <span class="show-link">http://monkey.org/~bill/402pauline</span>
+        <figure>
+            <a href="http://monkey.org/~bill/402pauline">
+                <img src="assets/402.png" alt="The front of the house with bushes">
+            </a>
+            <figcaption>Image: My old home, 402 Pauline.</figcaption>
+        </figure>
         <p>
             My most lucrative and most simple web page. I created this love letter to my old house and used it to sell the house. Originally hosted at 402pauline.com, this is a copy.
         </p>
     </section>
 
-    <section>
+    <section id="application">
         <h3>My Application to the Omni Group</h3>
-        <a href="http://monkey.org/~bill/">FIXME website</a>
-        <a href="http://monkey.org/~bill/">
-            FIXME
-        </a>
-        <h1>
-            [ INSERT image of incepted application ]
-[ Caption: Image: incepted webpage ]
-</h1>
+        <figure>
+            <img src="assets/app-screenshot.png" alt="A screenshot of this application.">
+            <figcaption>Image: A screenshot of this page got out of hand.</figcaption>
+        </figure>
 
 <p>
 I’ve composed this application as a HTML5 document.
@@ -356,14 +387,6 @@ During the creation of this document I hosted all the assets on a local apache2 
 <p>I’ve also checked the webpage using an HTML5 validator.  I’ve not found it is economical to chase all the issues a validator might present, but they do often point out deficiencies that should be addressed such as illegally used tags or missing attributes.  Standards compliance goes a long way toward making an accessible document.  When working with Javascript I find jslint to be invaluable in a similar capacity.
 </p>
     </section>
-
-
-    <video controls="controls"  name="Video Name" src="media/compare-size-take-two-480.mov"></video>
-    <img src="media/compare-size-take-two.gif">
-
-
-
-
     </article>
 </body>
 </html>

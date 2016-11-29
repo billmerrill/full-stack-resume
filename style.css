@@ -1,13 +1,60 @@
+
+
+
+
 /* overview */
 /*html { font-family: 'IM Fell Great Primer', serif; }*/
-html { font-family: 'Times', serif;}
+/*html { font-family: 'Times', serif;}*/
 body { width: 40em;
        margin: 0 auto;
-       padding: 0;}
+       padding: 0;
+       font-family: 'Karla', sans-serif;
+       font-weight: 400;
+       color: #282b34;
+}
+
+.show-link {
+    display:none;
+}
+.click-link {
+    display:inline;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #D87B29;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ol ol {
+    list-style-type: lower-latin;
+}
+
+article {
+    margin-bottom: 60px;
+}
+
 article img {
-   padding-top: 20px;
-   padding-bottom: 20px;
    max-width: 100%;
+}
+
+
+figcaption {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
 /* letter */
@@ -16,11 +63,22 @@ section#letter p {
 }
 
 /* resume */
+
+#resume h3 {
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.experience {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
 .experience-heading {
+    margin-left: -20px;
     display: flex;
     align-content: space-around;
     width: 100%;
-
     font-weight: bold;
 }
 
@@ -36,3 +94,15 @@ section#letter p {
 
 
 /* examples */
+
+figure {
+    margin: 40px 0px 0px;
+}
+
+figure img {
+    border: 1px solid #999;
+}
+
+#examples section {
+    margin-bottom: 60px;
+}
