@@ -51,15 +51,15 @@
         </p>
 
         <p>
-        I started my career as the primary developer creating the HTML-based product interfaces for network security startup Arbor Networks.  Since then I have developed ad and analytics platforms for millions of European IPTV viewers at Zattoo, worked in a small team to create a publishing platform for Reuters, developed web-based educational materials for MySQL AB, and worked with many entrepreneurs to create web products to bring their ideas to fruition.
+        I started my career as the primary front-end developer creating HTML-based product interfaces for network security startup Arbor Networks.  Since then I have developed ad and analytics platforms for millions of European IPTV viewers at Zattoo, worked in a small team to create a web publishing platform for Reuters, developed web-based educational materials for MySQL AB, and worked with entrepreneurs to create web products to bringing their ideas to the screen.
         </p>
 
         <p>
-        I began studying User Interaction at the University of Michigan; I wrote student-focused mapping and statistics software supporting the study of Learner Centered Design.  I now take a direct and practical approach to User Experience development.  My front-end focus is based in creating clear markup, logical styling, and safe javascript, and learning good tools to generate them.  Carefully considered and standards-based assets are the best first step towards creating accessible and indexable web pages; they respect the audience and focus on the goals of communication and interaction.  I enjoy working with both content experts and visual designers to bring ideas and designs to actualization.
+        I began studying User Interaction at the University of Michigan; I wrote student-focused mapping and statistics software supporting the study of Learner Centered Design.  I now take a direct and practical approach to User Experience development.  My front-end focus is based in creating clear markup, logical styling, and safe javascript, and learning useful tools to generate them.  Carefully considered and standards-based assets are the best first step towards creating accessible and indexable web pages; they respect the audience and focus on the goal of communication.  I enjoy working with both content experts and visual designers to bring ideas and designs to actualization.
         </p>
 
         <p>
-        In addition to my front-end experience, I am web application developer, I create both client and server rendered applications.  On the server I prefer Python and PHP, for client apps I use javascript module controller designs and have shipped products using the AngularJS framework.  I also develop and administer topophile.com, a website that combines GIS and 3D printing technology letting people build models of the places they love.
+        In addition to my front-end experience, I am web application developer, I create both client and server rendered applications.  On the server I prefer Python and PHP, for client apps I have used several archictectures in creating single page applications.  I also develop and administer topophile.com, a website that combines GIS and 3D printing technology letting people build models of the places they love.
         </p>
 
         <p>
@@ -80,7 +80,7 @@
 
     <article id="resume">
     <h2>Résumé</h2>
-        <b style="text-transform: uppercase;">Bill Merrill</b> is an Experienced Web Developer who enjoys working with teams to create excellent outcomes for users.  He has worked both with existing technologies and created products from scratch.  He hopes to join The Omni Group team to help make and sell great products for Omni’s customers.
+        <b style="text-transform: uppercase;">Bill Merrill</b> is an experienced Web Developer who enjoys working with teams to create excellent outcomes for users.  He has worked both with existing technologies and created products from scratch.  He hopes to join The Omni Group team to help make and sell great products for Omni’s customers.
     <p>
 
 <h3>Current Web Development Expertise</h3>
@@ -122,10 +122,10 @@
         </p>
         <h4>Major contributions:</h4>
         <p>
-            Developed front-end and server-side tools to support privacy-focused user behavior analytics including a javascript api and python proxy server.
+            Developed front-end and server-side tools to support privacy-focused user behavior analytics including a javascript API and python proxy server.
         </p>
         <p>
-            Created the automated credit score check experience for mortgage pre-approvals.  Works with product and design teams to create a working dynamic javascript interface and server-side processor.  Server-side tasks encapsulated multiple third-party services for a seamless user experience.
+            Created the automated credit score check experience for mortgage pre-approvals.  Worked with product and design teams to create a working dynamic javascript interface and server-side processor.  Server-side tasks encapsulated multiple third-party services for a seamless user experience.
         </p>
     </div>
 
@@ -142,7 +142,7 @@
             Created a Video Classroom presenting curriculum to students.  Built an analytics dashboard allowing educators to easily track students’ required progress thru the semester.  Utilized Youtube APIs for highly available and low cost video delivery.
         </p>
         <p>
-            Piloted conversion of the web application from server-rendered templates to an Angular-based client-side application.  Expanded server APIs to support the new paradigm.
+            Piloted conversion of the web application from server-rendered templates to an AngularJS-based single page application.  Expanded server APIs to support the new paradigm.
         </p>
     </div>
 
@@ -251,6 +251,7 @@
             Topophile is a hobby business I’ve created to explore geographical data and geo-programming.  The website gives a person familiar with online tools like MapQuest or Google Maps tools to 3D print custom models of the Earth’s surface.  I am responsible for both the front and backend of the website and I’ll take this opportunity to talk about a couple points in the front-end.
         </p>
 
+        <h4>Welcoming potential customers</h4>
         <p>
             The landing page, the first thing most users will see, was the last thing I completed before the initial launch.  While the primary app did not work on mobile in 2014 (I’m now excited to see WebGL has become standard on iOS Safari and I look forward to improving the model builder for mobile) I did make sure the page was responsive and looked good on smart phone browsers.
         </p>
@@ -260,6 +261,8 @@
             <figcaption>Image: Using development tools to view the Topophile landing page in desktop and iPhone views.</figcaption>
         </figure>
 
+        <h4>Exploring elevation</h4>
+
         <p>
             The model builder has three steps, the first is exploring terrain.  Rather than attempt a VR-like experience, I strove to use a familiar tiled web map and show the terrain related to selected areas.  On the left a person searches for a feature and selects an area on the map, on the right a low-resolution model of the terrain is quickly displayed.  I wanted clarity and speed for this step as users spend some time perfecting their selection.
         </p>
@@ -268,6 +271,8 @@
             <img src="assets/terrain-search.gif" alt="Animation showing search and exploration of Mt. Rainier's elevation.">
             <figcaption>Animation: Users can query the elevation of an area by searching and selecting in standard web map.</figcaption>
         </figure>
+
+        <h4>Understanding Size</h4>
 
         <p>
             I found communicating the size of printed model to be very important as people decided to purchase.  I started by selecting three standard sizes for a model and displayed the height, width, and depth of a model textually. Going further I wanted to show an object a person might have handy for comparison.  I chose a US dollar bill and a Euro note and added them to the 3D scene.  I hoped that seeing a object the could hold in real life might help them image the size of a plastic printed model.
@@ -281,6 +286,8 @@
             <img src="assets/compare-size.gif" alt="Comparing a mountain model to a dollar bill from mulitple angles">
             <figcaption>Animation: Users can compare their virtual model to an object they might have on hand, a dollar bill.</figcaption>
         </figure>
+
+        <h4 id="patience">Asking for patience</h4>
 
         <p>
             I made a simple and I think beautiful clock animation using CSS to show the steps of unknowable duration that lead from a person designing a model to being able to purchase it from my 3D printing vendor.  While functionally no different than a spinner, I liked the visual representation of the steps setting up expectations and letting you know something’s still happening.

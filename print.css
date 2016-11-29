@@ -29,10 +29,15 @@
 	h2 {
 		color: #000;
 		font-size: 24px;
+		page-break-after: avoid !important;
 	}
 
 	h3 {
 		font-size: 18px;
+	}
+
+	h4 {
+		font-weight: 700;
 	}
 
 	#letter, #exmaples {
@@ -48,27 +53,29 @@
 		margin-top: 10px;
 	}
 
-	section#application {
-		margin-bottom: 0px;
-		padding-bottom: 0px;
-		border-bottom: 0px;
-	}
-
     article {
         page-break-after: always;
 		margin-bottom: 0px;
     }
 
+	article:last-of-type {
+		page-break-after: avoid;
+	}
+
 	section {
 		page-break-inside: avoid;
 	}
+
+	h4 {
+		page-break-after: avoid;
+	}
+
 
 	img {
 		max-width: 100%;
 	}
 
-
-
-
-
+	figure {
+		margin-top: 20px;
+	}
 }
