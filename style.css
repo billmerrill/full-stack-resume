@@ -1,16 +1,9 @@
-
-
-
-
-/* overview */
-/*html { font-family: 'IM Fell Great Primer', serif; }*/
-/*html { font-family: 'Times', serif;}*/
 body { width: 40em;
        margin: 0 auto;
        padding: 0;
        font-family: 'Karla', sans-serif;
        font-weight: 400;
-       color: #282b34;
+       font-size: 16px;
 }
 
 .show-link {
@@ -36,6 +29,7 @@ h3 {
 
 ol {
     list-style-type: upper-roman;
+    font-size: 16px;
 }
 
 ol ol {
@@ -58,9 +52,9 @@ figcaption {
 }
 
 /* letter */
-section#letter p {
-    font-size: 18px
-}
+/*section#letter p {
+    font-size: 40px
+}*/
 
 /* resume */
 
@@ -106,3 +100,21 @@ figure img {
 #examples section {
     margin-bottom: 60px;
 }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 736px) {
+      body {
+          width: 25em;
+      }
+
+      nav, article {
+          margin-left: 1em;
+          margin-right: 1em;
+      }
+
+      p {
+          font-size: 24px;
+      }
+
+  }
