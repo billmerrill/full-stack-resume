@@ -1,7 +1,7 @@
 body { width: 40em;
        margin: 0 auto;
        padding: 0;
-       font-family: 'Karla', sans-serif;
+       font-family: Times, serif;
        font-weight: 400;
        font-size: 16px;
 }
@@ -73,6 +73,18 @@ figcaption {
     display: flex;
     align-content: space-around;
     width: 103%;
+    font-weight: bold;
+}
+
+.experience > .consultant-experience-heading {
+    margin-top: 1em;
+}
+
+
+.consultant-experience-heading {
+    margin-left: 0px;
+    display: flex;
+    align-content: space-around;
     font-weight: bold;
 }
 

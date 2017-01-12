@@ -5,7 +5,7 @@
     <title>Résumé of Bill Merrill</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'> -->
 
     <meta name="description" content="Bill Merrill is an experienced full stack web developer.">
 
@@ -19,18 +19,17 @@
 
 
     <article id="resume">
-    <h2>Résumé</h2>
     <p>
-        <b style="text-transform: uppercase;">Bill Merrill</b> is an experienced Web Developer who enjoys working with teams to create excellent outcomes for users.  He has  both evolved existing technologies and created products from scratch.  He hopes to join The Omni Group team to both help sell Omni's great products and help Omni's customers get the most from their tools.
+        <b style="text-transform: uppercase;">Bill Merrill</b> is a professional software developer with experience creating novel applications in many domains.  He has delivered products as an independent full-stack web developer, as a leader of feature-driven teams, and as a member of multiple startup engineering teams. He uses modern quality processes, values team communication, and finds value in making work visible.
     </p>
 
 <h3>Current Web Development Expertise</h3>
     <dl>
         <dt>Web Front-End</dt>
-        <dd>HTML; CSS, SCSS;  Javascript ES5 (learning 6)</dd>
+        <dd>HTML; CSS, SCSS;  Javascript ES5, ES6</dd>
 
         <dt>Javascript</dt>
-        <dd>Bootstrap, AngularJS, jQuery, jslint, bower, npm</dd>
+        <dd>Bootstrap, AngularJS, EmberJS, jQuery, jslint, bower, npm</dd>
 
         <dt>App Servers</dt>
         <dd>Servers: Apache, NGINX; Python: Django, Cherrypy; PHP: Symfony, WordPress</dd>
@@ -47,42 +46,65 @@
             <div class="experience-position">Founder, Topophile.com</div>
             <div class="experience-duration">Oct 2014 To Present</div>
         </div>
+            <p>Topophile automates GIS tools to allow customers to build and order custom 3D models of the Earth’s terrain.</p>
         <p>
-            Topophile allows users to create custom 3D printed models of their favorite places.  Bill developed an automated model design service, utilized open source geographic information tools and data, and integrated with Shapeways.com’s print API for model generation and fulfillment.  He created all front-end experiences.
+            Using Open Source GIS tools, developed a parametric CAD creating printable 3D terrain models and integrated this application with a third party 3D print fulfillment service.
+        </p>
+        <p class="tech">
+            Javascript, jQuery, Bootstrap; Python, CherryPy, NumPy; UMN Mapserver
         </p>
     </div>
 
     <div class="experience">
         <div class="experience-heading">
-            <div class="experience-position">Engineering Consultant, Sindeo</div>
-            <div class="experience-duration">May 2015 To Sept 2016</div>
+            <div class="experience-position">Independent Consultant</div>
+            <div class="experience-duration">Nov 2013 To Present</div>
         </div>
+
+        <div class="consultant-experience-heading">
+            <div class="experience-position">McCombs School of Business, University of Texas at Austin</div>
+            <div class="experience-duration">Dec 2016</div>
+        </div>
+            <p>
+                Interviewed leadership and software development team members to explore current practices, problems, and goals. Generated a report reviewing findings and offering recommendations and resources for moving the team towards industry best practices.
+            </p>
+
+        <div class="consultant-experience-heading">
+            <div class="experience-position">Sindeo.com</div>
+            <div class="experience-duration">May 2015 to Sept 2016</div>
+        </div
         <p>
             Sindeo is creating an online mortgage shopping and closing experience.
         </p>
         <h4>Major contributions:</h4>
         <p>
-            Developed front-end and server-side tools to support privacy-focused user analytics including a javascript API and python proxy server.
+            Built a service to use third-party analytics while preserving privacy. Work included a server-side controller and instrumenting the client-side javascript application.
         </p>
         <p>
-            Created Sindeo's automated Credit Score Check experience for mortgage pre-approvals.  Worked with product and design teams to create a dynamic javascript user interface and application service.  Created a seamless user experience by encapsulating third-party services including credit reporting and cloud storage in a single application.
+            Created Sindeo's automated Credit Score Check experience.  Work included data modeling, integration with reporting services and a secure storage vendor, and creating a user interface for requesting and viewing credit data.
+        </p>
+        <p class="tech">
+            Javascript, Coffeescript, AngularJS; Python, Django, Django Rest Framework; Celery, Postgres
         </p>
     </div>
 
     <div class="experience">
-        <div class="experience-heading">
-            <div class="experience-position">Engineering Consultant, LaunchPad Central</div>
+        <div class="consultant-experience-heading">
+            <div class="experience-position">LaunchPad Central</div>
             <div class="experience-duration">Jan 2014 to Sept 2014</div>
         </div>
         <p>
-            LaunchPad Central is an entrepreneurial education startup providing Lean Startup tools and curriculum. Bill worked closely with product management, customer success, educators, and engineering to develop features and improve reliability.
+            LaunchPad Central is an entrepreneurial education startup providing Lean Startup tools and curriculum. Bill worked cross-teams to deliver features and improve reliability.
         </p>
         <h4>Major contributions:</h4>
         <p>
-            Created a Video Classroom presenting curriculum to students.  Built an analytics dashboard allowing educators to easily track students’ required progress thru the semester.  Utilized Youtube APIs for highly available and low cost video delivery.
+            Created a Video Classroom presenting curriculum to students.  Built an analytics dashboard allowing educators to easily track students’ progress thru the semester.  Utilized Youtube APIs for highly available and low cost video delivery.
         </p>
         <p>
-            Piloted conversion of the existing web application from server-rendered templates to an AngularJS-based single page application.  Expanded server APIs to support the new paradigm.
+            Piloted conversion of the existing server-rendered web application to an AngularJS-based single page application.  Expanded server APIs to support the new paradigm.
+        </p>
+        <p class="tech">
+            Javascript, Bootstrap, jQuery, AngularJS; PHP, Symfony; Jenkins, MySQL, AWS
         </p>
     </div>
 
@@ -92,11 +114,14 @@
             <div class="experience-duration">Jan 2011 To July 2013</div>
         </div>
         <p>
-            Zattoo is a European virtual cable provider offering live television on computers, mobiles, smart televisions, and set-top boxes.  Bill created front-end user interfaces on desktop and mobile websites, managed and improved the server-side API and advertising system, and worked with marketing on promotional landing pages and displays.
+            Zattoo is a European virtual Cable TV provider.
         </p>
         <h4>Major contributions:</h4>
         <p>
-            Transitioned the Zattoo ad infrastructure across vendors on a heroic timeframe. Specified, rewrote, deployed, tested, and supported operations to enable the switch before the extremely popular EUFA Euro 2012.  Work spanned user front-end (web, iOS, android), Zattoo application servers, and vendor systems.
+            Developed many features of Zattoo platform including the Desktop Single Page Application (SPA), web applications for mobile, tablet and set-top TV.  Work spanned from HTML UX to the Python API and multi-tiered storage backend.
+        </p>
+        <p>
+            Managed engineering for advertising across all platforms. Successfully transitioned entire serving infrastructure on a compressed timeframe.  He specified, rewrote, tested, deployed and supported operations to enable the switch before UEFA Euro 2012, an event which brought record breaking viewership.
         </p>
         <p>
             Bootstrapped and launched Zattoo’s Live TV Android App.  Managed the major challenge of Android’s lack of live streaming video protocols.
@@ -105,16 +130,37 @@
 
     <div class="experience">
         <div class="experience-heading">
-            <div class="experience-position">Independent Engineering Consultant</div>
+            <div class="experience-position">Independent Consultant</div>
             <div class="experience-duration">April 2008 to Sept 2010</div>
         </div>
-        <h4>FetchDalton by Weber Innovations LLC</h4>
+
+        <div class="consultant-experience-heading">
+            <div class="experience-position">FetchDalton by Webber Innovations LLC</div>
+            <div class="experience-duration">June 2009 to Sept 2010</div>
+        </div>
+
         <p>
             Create web tools for biochemists.  Provided front-end application development, data management, operations, and user testing.
         </p>
-        <h4>Systems Analysis for Symphono, LLC</h4>
+        <p>
+            Work included converstion of prototypes to deployable products, develop of a large
+            database of all known chemical compounds, user testing and iteration with domain experts.
+        </p>
+        <p class="tech">
+            Javascript, YUI, PHP, Python, MySQL, Apache httpd
+        </p>
+        <div class="consultant-experience-heading">
+            <div class="experience-position">Symphono LLC</div>
+            <div class="experience-duration">April 2008 to April 2009</div>
+        </div>
         <p>
             Built tools to monitor and analyze high frequency trading systems.
+        </p>
+        <p>
+            Work included building custom unix-based tools for real time data analysis and marshaling, designing a data warehouse in Microsoft SQL Server, and supporting the data warehouse, data analysis, and reporting.
+        </p>
+        <p class="tech">
+            Python, C#, MSSQL
         </p>
     </div>
 
@@ -124,14 +170,14 @@
             <div class="experience-duration">April 2006 to Sept 2009</div>
         </div>
 
-        <p>As a principal in the consulting group performed work spanning many fields:
+        <p>Worked a consultant with clients in many domains:
         <ul>
-        <li>Technical leadership and development of a lead generation website backed with a customer relationship management system for advertising agencies.</li>
-        <li>Design and development of social web publishing and networking software</li>
-        <li>Design and implementation of a security-hardened Red Hat Enterprise Linux image for large-scale deployment, including monitoring integration</li>
-        <li>Analysis and improvement of a major university's online registration user experience</li>
+        <li>Designed and developed social web publishing and networking software</li>
+        <li>Designed and implemented a security-hardened Red Hat Enterprise Linux image for large-scale deployment, including monitoring integration</li>
+        <li>Analyzed and improved of major university's online registration user experience</li>
+        <li>Analyzed and prototyped a real estate social web system</li>
+        <li>Provided technical guidance and developed a lead generation website backed with a Customer Relationship Management system for advertising agencies.</li>
         <li>Development of user-focused websites for education and commerce</li>
-        <li>Business analysis and prototyping of a real estate social web system</li>
     </p>
     </div>
 
@@ -164,13 +210,13 @@
             <div class="experience-duration">Sept 1994 to Aug 1998</div>
         </div>
         <p>
-            Interned with the IBM AS/400 Language Tools team profiling and improving the C, C++, and Modula-2 compilers.
+            <b>NSF Research Experiences for Undergraduate</b> at University of Michigan Dearborn, developed an intelligent system for safety glass analysis later used by Ford Motor Company.
         </p>
         <p>
-            Coordinated a student run self-driving vehicle project; developed visual analysis and path planning systems.
+            Interned with the <b>IBM AS/400</b> Language Tools team profiling and improving the C, C++, and Modula-2 compilers.
         </p>
         <p>
-            NSF Research Experiences for Undergraduate at University of Michigan Dearborn, developed an intelligent system for safety glass analysis later used by Ford Motor Company.
+            Coordinated a student run <b>self-driving vehicle</b> project; developed visual analysis and path planning systems.
         </p>
     </div>
 
