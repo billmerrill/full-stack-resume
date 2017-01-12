@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bill Merrill for Senior Front-End Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+
+    <meta name="description" content="Bill Merrill's application to The Omni Group's posting for a Senior Front-End Web Developer.">
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen,print">
+    <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+</head>
+<body>
+    <header>
+        <h1>Bill Merrill's Application<br>to The Omni Group</h1>
+    </header>
+
+    <nav>
+        <ol style="style: lower-roman">
+            <li><a href="#letter">Cover Letter</a></li>
+            <li><a href="#examples">Example Work</a>
+                <ol>
+                    <li><a href="#topophile">Topophile Case Study</a></li>
+                    <li><a href="#launchpadcentral">LaunchPad Central</a></li>
+                    <li><a href="#commoncycle">Common Cycle</a></li>
+                    <li><a href="#phonedin">Phoned In</a></li>
+                    <li><a href="#fourohtwo">402 Pauline Blvd</a></li>
+                    <li><a href="#application">This Application</a></li>
+                </ol>
+            </li>
+            <li><a href="#resume">Résumé</a></li>
+
+        </ol>
+
+        Please contact me at bill@monkey.org or 734-730-6561.  Thank you.
+    </nav>
+
+
+    <article id="letter">
+        <h2>Cover Letter</h2>
+        <p>
+            My name is Bill Merrill, I am web developer with comprehensive experience delivering internet products.  I am applying for your Senior Front-End Web Developer position and would appreciate your consideration.
+        </p>
+
+        <p>
+        I started my career as the primary front-end developer creating HTML-based product interfaces for network security startup Arbor Networks.  Since then I have developed ad and analytics platforms for millions of European IPTV viewers at Zattoo, worked in a small team to create a web publishing platform for Reuters, developed web-based educational materials for MySQL AB, and worked with entrepreneurs to create web products to bringing their ideas to the screen.
+        </p>
+
+        <p>
+        I began studying User Interaction at the University of Michigan; I wrote student-focused mapping and statistics software supporting the study of Learner Centered Design.  I now take a direct and practical approach to User Experience development.  My front-end focus is based in creating clear markup, logical styling, and safe javascript, and learning useful tools to generate them.  Carefully considered and standards-based assets are the best first step towards creating accessible and indexable web pages; they respect the audience and focus on the goal of communication.  I enjoy working with both content experts and visual designers to bring ideas and designs to actualization.
+        </p>
+
+        <p>
+        In addition to my front-end experience, I am web application developer, I create both client and server rendered applications.  On the server I prefer Python and PHP, for client apps I have used several archictectures in creating single page applications.  I also develop and administer topophile.com, a website that combines GIS and 3D printing technology letting people build models of the places they love.
+        </p>
+
+        <p>
+        I believe considering how work is done is an important part of success and enjoy working on self-aware teams.  My years of working with multi-site organizations and as a remote consultant have taught me the importance of good communication hygiene.  The right amount of process and communication feed back into themselves and make successes and problems evident.
+        </p>
+
+        <p>
+        Lastly, the LC III was my first Macintosh computer and I have used them as my primary computer ever since.  I’ve used several of the Omni Group’s products over the years and I’d be very pleased to support their sale and use.
+        </p>
+
+        <p>
+            Thank you!<br>
+            Bill
+        </p>
+
+
+    </article>
+
+
+    <article id="examples">
+    <h2>Example Work</h2>
+
+    <section id="topophile">
+        <h3>Topophile Case Study</h3>
+        <a class="click-link" href="http://topophile.com">Visit Topophile.com</a>
+        <span class="show-link">http://topophile.com</span>
+        <figure>
+        <a href="http://topophile.com">
+            <img src="assets/topophile.png" alt="A view of the Topophile Modeler building web page in broswer">
+        </a>
+            <figcaption>Image: The Topophile Model Builder starts with finding the right location.</figcaption>
+        </figure>
+
+
+        <p>
+            Topophile is a hobby business I’ve created to explore geographical data and geo-programming.  The website gives a person familiar with online tools like MapQuest or Google Maps tools to 3D print custom models of the Earth’s surface.  I am responsible for both the front and backend of the website and I’ll take this opportunity to talk about a couple points in the front-end.
+        </p>
+
+        <h4>Welcoming potential customers</h4>
+        <p>
+            The landing page, the first thing most users will see, was the last thing I completed before the initial launch.  While the primary app did not work on mobile in 2014 (I’m now excited to see WebGL has become standard on iOS Safari and I look forward to improving the model builder for mobile) I did make sure the page was responsive and looked good on smartphone browsers.
+        </p>
+
+            <figure>
+            <img src="assets/responsive-landing.png" alt="Showing the landing page in desktop and iPhone display modes using Safari dev tools">
+            <figcaption>Image: Using development tools to view the Topophile landing page in desktop and iPhone views.</figcaption>
+        </figure>
+
+        <h4>Exploring elevation</h4>
+
+        <p>
+            The model builder has three steps, the first is exploring terrain.  Rather than attempt a VR-like experience, I strove to use a familiar tiled web map for exploration and to query for the elevation of a selected area.  On the left a person searches for a feature and selects an area on the map, on the right a low-resolution model of the terrain is quickly displayed.  I wanted clarity and speed for this step as users spend some time perfecting their selection.
+        </p>
+
+        <figure>
+            <img src="assets/terrain-search.gif" alt="Animation showing search and exploration of Mt. Rainier's elevation.">
+            <figcaption>Animation: Users can query the elevation of an area by searching and selecting in standard web map.</figcaption>
+        </figure>
+
+        <h4>Understanding Size</h4>
+
+        <p>
+            I found communicating the size of printed model to be very important as people decided to purchase.  I started by selecting three standard sizes for a model and displayed the dimensions of the model numerically. Going further, I wanted to render an object a person might have handy for comparison.  I chose a US dollar bill and a Euro note and added them to the 3D scene with the model.  I hoped seeing an object on screen the user could also hold in hand might help them imagine the size of the final printed model.
+        </p>
+
+        <p>
+            In testing, I found people were reluctant to click the buttons. They thought the buttons were related to the purchase price rather than the size of the model.  The next time I work on this element I will seek better solutions.
+        </p>
+
+        <figure>
+            <img src="assets/compare-size.gif" alt="Comparing a mountain model to a dollar bill from mulitple angles">
+            <figcaption>Animation: Users can compare their virtual model to an object they might have on hand, a dollar bill.</figcaption>
+        </figure>
+
+        <h4 id="patience">Asking for patience</h4>
+
+        <p>
+            I made a simple and I think beautiful clock animation using CSS to show the steps of unknowable duration that lead from a person designing a model to being able to purchase it from the 3D printing vendor.  While functionally no different than a spinner, I liked the visual representation of the steps, they set up expectations and assure the user that something’s still happening.
+        </p>
+
+
+        <figure>
+            <img src="assets/upload-clock.gif" alt="Simplistic clocks for file upload, file processing, and completion animate in turn.">
+            <figcaption>Animation: Simplified clocks are used to indicate progress is being made.</figcaption>
+        </figure>
+
+
+    </section>
+
+    <section id="launchpadcentral">
+        <h3>LaunchPad Central Video Classroom</h3>
+        <p>
+        I created these wireframes in response to the first discussion of a video classroom for Launchpad Central.  In the discussion we identified primary users and their goals.  We had many of ideas for what could happen and some discussion of a minimum interface.  These diagrams were more specific than our discussions and helped ground our questions about specific capabilities.  I have used Omnigraffle for wireframing for most of my career, it is invaluable.
+        </p>
+
+        <p>
+            The two primary interfaces were the student’s viewing page and the instructor's completion report.  I include the two wireframes I created to start the discussion before developing the interface.
+        </p>
+
+        <p>
+            I later implemented this front-end application using bootstrap and AngularJS backed by the Youtube API and our own use behavior tracking.
+        </p>
+
+        <figure>
+            <img src="assets/lpc-completion-report.png" alt="A grid of green and red indicators showing per student team, the completion of viewing required videos for each week.">
+            <figcaption>Image: Instructors would check this screen before class to confirm all teams have done the assigned viewings.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/lpc-video-classroom.png" alt="A screen showing modules to be watched, the progress made so far, and a video player">
+            <figcaption>Image: Students would use this screen to watch coursework and check their progress on assignments.</figcaption>
+        </figure>
+    </section>
+
+    <section id="commoncycle">
+        <h3>Common Cycle</h3>
+        <a class="click-link" href="http://commoncycle.org">View Common Cycle's Website</a>
+        <span class="show-link">http://commoncycle.org</span>
+        <figure>
+            <a href="http://commoncycle.org">
+                <img src="assets/commoncycle.png" alt="Common Cycle's Front Page in a broswer">
+            </a>
+            <figcaption>Image: A view of the Common Cycle webpage.</figcaption>
+        </figure>
+        <P>
+        I created a custom HTML and PHP blog theme for the bicycle repair collective I helped form in Ann Arbor, Michigan.  The website is intentionally simple as the groups membership is a constantly evolving volunteer corps.  Were I to re-implement this now I would include a responsive layout for mobile device users.
+        </p>
+    </section>
+    <section id="phonedin">
+        <h3>Phoned In</h3>
+        <a class="click-link" href="http://monkey.org/~bill/pi/index.php?offset=101">Check out Phoned In</a>
+        <span class="show-link">http://monkey.org/~bill/pi/index.php?offset=101</span>
+        <figure>
+            <a href="http://monkey.org/~bill/pi/index.php?offset=101">
+                <img src="assets/phonedin.png" alt="Phoned In's image grid in a browser window">
+            </a>
+            <figcaption>Image: Phoned In's time grid with time moving forward similar to a wall calendar.</figcaption>
+        </figure>
+        <p>
+            Phoned In is my attempt to create a sense of time and memory with my photos.  Built in 2005, I posted photos from my cameraphone and the application displayed them in a calendar-like format.  I wrote server software to receive MMS photos in Python and a PHP application to store and display the calendar grid. The latest photos are always in the lower right and the past is back to the left.  I no longer post to Phoned In but still browse it.
+        </p>
+    </section>
+    <section id="fourohtwo">
+        <h3>402 Pauline Blvd</h3>
+        <a class="click-link" href="http://monkey.org/~bill/402pauline">Read about my dear old house</a>
+        <span class="show-link">http://monkey.org/~bill/402pauline</span>
+        <figure>
+            <a href="http://monkey.org/~bill/402pauline">
+                <img src="assets/402.png" alt="The front of the house with bushes">
+            </a>
+            <figcaption>Image: My old home, 402 Pauline.</figcaption>
+        </figure>
+        <p>
+            My most lucrative and most simple web page. I created this love letter to my old house and used it to sell the house. Originally hosted at 402pauline.com, this is a copy.
+        </p>
+    </section>
+
+    <section id="application">
+        <h3>My Application to the Omni Group</h3>
+        <figure>
+            <img src="assets/app-screenshot.png" alt="A screenshot of this application.">
+            <figcaption>Image: A screenshot of this page got out of hand.</figcaption>
+        </figure>
+
+<p>
+I’ve composed this application as a HTML5 document.
+</p>
+
+<p>I starting writing prose in Pages to take advantage of standard writing tools like spelling and grammar checking.  I made notes of images and animations I’d like to include and put placeholders in the prose.
+</p>
+
+<p>Then I created a source control repository for the project and added a blank html file and a directory for media assets.  I edited the html file using the Atom code editor and filled out a skeleton of tags with the basic structure of 3 sections, the Cover Letter, the Résumé, and the Example works.  Later I pasted sections of prose into the skeleton, linked images and animations, and made simple style adjustments.
+</p>
+<p>
+I used the built-in macOS tools to create screens shots of my websites and record videos for animations.  I edited my screen shots using Preview.app and Acorn;  I used the command line tool ‘ffmpeg’ to convert the videos to animated gifs.
+</p>
+
+<p>
+During the creation of this document I hosted all the assets on a local apache2 httpd instance.  I enjoy maintaining local development environments for my work. This a habit from days of less-than-reliable network connectivity.
+</p>
+
+<p>As this is a simple document I’m not too worried about cross-browser display issues, but given the audience I’ve checked it in Omniweb, Safari, Chrome, Firefox on my Macbook Pro and Safari on my iPhone and iPad.
+</p>
+
+<p>Once I was happy with the screen layout I created a print stylesheet for a good PDF presentation.</p>
+
+<p>I’ve also checked the webpage using an HTML5 validator.  While validators can be annoying and overly specific they do often point out deficiencies that should be addressed such as illegally used tags or missing attributes.  I found 2 orphaned closing tags from developmental edits.  Standards compliance goes a long way toward making an accessible document.  When working with Javascript I find jslint to be invaluable in a similar capacity.
+</p>
+    </section>
+    </article>
+    <article id="resume">
+    <h2>Résumé</h2>
+    <p>
+        <b style="text-transform: uppercase;">Bill Merrill</b> is an experienced Web Developer who enjoys working with teams to create excellent outcomes for users.  He has  both evolved existing technologies and created products from scratch.  He hopes to join The Omni Group team to both help sell Omni's great products and help Omni's customers get the most from their tools.
+    </p>
+
+<h3>Current Web Development Expertise</h3>
+    <dl>
+        <dt>Web Front-End</dt>
+        <dd>HTML; CSS, SCSS;  Javascript ES5 (learning 6)</dd>
+
+        <dt>Javascript</dt>
+        <dd>Bootstrap, AngularJS, jQuery, jslint, bower, npm</dd>
+
+        <dt>App Servers</dt>
+        <dd>Servers: Apache, NGINX; Python: Django, Cherrypy; PHP: Symfony, WordPress</dd>
+
+        <dt>Infrastructure</dt>
+        <dd>Source Control: Git, SVN; Databases: SQL and Key-based;
+        	Automation: Jenkins, Fabric, grunt, gulp, make</dd>
+    </dl>
+
+    <h3>Experience</h3>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Founder, Topophile.com</div>
+            <div class="experience-duration">Oct 2014 To Present</div>
+        </div>
+        <p>
+            Topophile allows users to create custom 3D printed models of their favorite places.  Bill developed an automated model design service, utilized open source geographic information tools and data, and integrated with Shapeways.com’s print API for model generation and fulfillment.  He created all front-end experiences.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Engineering Consultant, Sindeo</div>
+            <div class="experience-duration">May 2015 To Sept 2016</div>
+        </div>
+        <p>
+            Sindeo is creating an online mortgage shopping and closing experience.
+        </p>
+        <h4>Major contributions:</h4>
+        <p>
+            Developed front-end and server-side tools to support privacy-focused user analytics including a javascript API and python proxy server.
+        </p>
+        <p>
+            Created Sindeo's automated Credit Score Check experience for mortgage pre-approvals.  Worked with product and design teams to create a dynamic javascript user interface and application service.  Created a seamless user experience by encapsulating third-party services including credit reporting and cloud storage in a single application.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Engineering Consultant, LaunchPad Central</div>
+            <div class="experience-duration">Jan 2014 to Sept 2014</div>
+        </div>
+        <p>
+            LaunchPad Central is an entrepreneurial education startup providing Lean Startup tools and curriculum. Bill worked closely with product management, customer success, educators, and engineering to develop features and improve reliability.
+        </p>
+        <h4>Major contributions:</h4>
+        <p>
+            Created a Video Classroom presenting curriculum to students.  Built an analytics dashboard allowing educators to easily track students’ required progress thru the semester.  Utilized Youtube APIs for highly available and low cost video delivery.
+        </p>
+        <p>
+            Piloted conversion of the existing web application from server-rendered templates to an AngularJS-based single page application.  Expanded server APIs to support the new paradigm.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Software Engineer &amp; Advertising champion, Zattoo.com</div>
+            <div class="experience-duration">Jan 2011 To July 2013</div>
+        </div>
+        <p>
+            Zattoo is a European virtual cable provider offering live television on computers, mobiles, smart televisions, and set-top boxes.  Bill created front-end user interfaces on desktop and mobile websites, managed and improved the server-side API and advertising system, and worked with marketing on promotional landing pages and displays.
+        </p>
+        <h4>Major contributions:</h4>
+        <p>
+            Transitioned the Zattoo ad infrastructure across vendors on a heroic timeframe. Specified, rewrote, deployed, tested, and supported operations to enable the switch before the extremely popular EUFA Euro 2012.  Work spanned user front-end (web, iOS, android), Zattoo application servers, and vendor systems.
+        </p>
+        <p>
+            Bootstrapped and launched Zattoo’s Live TV Android App.  Managed the major challenge of Android’s lack of live streaming video protocols.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Independent Engineering Consultant</div>
+            <div class="experience-duration">April 2008 to Sept 2010</div>
+        </div>
+        <h4>FetchDalton by Weber Innovations LLC</h4>
+        <p>
+            Create web tools for biochemists.  Provided front-end application development, data management, operations, and user testing.
+        </p>
+        <h4>Systems Analysis for Symphono, LLC</h4>
+        <p>
+            Built tools to monitor and analyze high frequency trading systems.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Principal, Gordian Labs LLC</div>
+            <div class="experience-duration">April 2006 to Sept 2009</div>
+        </div>
+
+        <p>As a principal in the consulting group performed work spanning many fields:
+        <ul>
+        <li>Technical leadership and development of a lead generation website backed with a customer relationship management system for advertising agencies.</li>
+        <li>Design and development of social web publishing and networking software</li>
+        <li>Design and implementation of a security-hardened Red Hat Enterprise Linux image for large-scale deployment, including monitoring integration</li>
+        <li>Analysis and improvement of a major university's online registration user experience</li>
+        <li>Development of user-focused websites for education and commerce</li>
+        <li>Business analysis and prototyping of a real estate social web system</li>
+    </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Senior Software Engineer, Arbor Networks</div>
+            <div class="experience-duration">Dec 2000 to March 2006</div>
+        </div>
+        <p>
+            As a founding member of the Arbor Networks research and development team, Bill was directly involved in the initial design, implementation, and ongoing improvement of 3 world-class network security and management products: Peakflow DoS, Peakflow Traffic (later Peakflow SP), and Peakflow X.
+        </p>
+        <p>
+            Focused on user experience, data representation, and systems management, Bill developed and led teams developing components for web-based user interfaces, report generation tools, and business logic tackling data storage and management on a highly distributed network monitoring infrastructure.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Research Assistant, University of Michigan</div>
+            <div class="experience-duration">Sept 1998 to Dec 2000</div>
+        </div>
+        <p>
+            Developed software supporting environmental science education curriculum and Learner Centered Design.
+        </p>
+    </div>
+
+    <div class="experience">
+        <div class="experience-heading">
+            <div class="experience-position">Extracurricular Experience</div>
+            <div class="experience-duration">Sept 1994 to Aug 1998</div>
+        </div>
+        <p>
+            Interned with the IBM AS/400 Language Tools team profiling and improving the C, C++, and Modula-2 compilers.
+        </p>
+        <p>
+            Coordinated a student run self-driving vehicle project; developed visual analysis and path planning systems.
+        </p>
+        <p>
+            NSF Research Experiences for Undergraduate at University of Michigan Dearborn, developed an intelligent system for safety glass analysis later used by Ford Motor Company.
+        </p>
+    </div>
+
+    <h3>Education</h3>
+    <p>
+        <b>University of Michigan</b>, Ann Arbor, Michigan<br>
+        Graduate studies in Education Technnologies and Artificial Intelligence
+    </p>
+
+    <p>
+        <b>Michigan Technological University</b>, Houghton, Michigan<br>
+        Bachelor of Science in Computer Science
+    </p>
+
+    <h3>Contact</h3>
+    You can contact Bill at bill@monkey.org or 734-730-6561
+    </article>
+
+
+
+</body>
+</html>
