@@ -1,7 +1,9 @@
 body { width: 40em;
        margin: 0 auto;
        padding: 0;
-       font-family: Times, serif;
+       /*font-family: Times, serif;*/
+       font-family: Georgia, serif;
+
        font-weight: 400;
        font-size: 16px;
 }
@@ -14,7 +16,7 @@ body { width: 40em;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 24px;
 }
 
 h2 {
@@ -58,6 +60,21 @@ figcaption {
 
 /* resume */
 
+table.tools  td{
+    border-collapse: collapse;
+    border: 0px;
+    padding-right: 20px;
+    margin: 0px;
+    vertical-align: top;
+}
+
+table.tools th{
+    text-align: left;
+    vertical-align: top;
+}
+
+
+
 #resume h3 {
     margin-top: 40px;
     font-size: 28px;
@@ -65,6 +82,11 @@ figcaption {
 
 .experience {
     margin-top: 40px;
+    padding-left: 20px;
+}
+
+.consulting {
+    margin-top: 1em;
     padding-left: 20px;
 }
 
@@ -76,13 +98,8 @@ figcaption {
     font-weight: bold;
 }
 
-.experience > .consultant-experience-heading {
-    margin-top: 1em;
-}
-
-
 .consultant-experience-heading {
-    margin-left: 0px;
+    margin-left: -20px;
     display: flex;
     align-content: space-around;
     font-weight: bold;
@@ -96,6 +113,23 @@ figcaption {
 .experience-duration {
     margin-left: auto;
     margin-right: 0px;
+}
+
+dl {
+    display: flex;
+    align-content: space-around;
+
+}
+
+dt {
+    width: 400px;
+    margin-left: 0px;
+    margin-right: auto;
+}
+dd  {
+    margin-left: auto;
+    margin-right: 0px;
+    clear: left;
 }
 
 
