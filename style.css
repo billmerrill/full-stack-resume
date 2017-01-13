@@ -1,9 +1,7 @@
 body { width: 40em;
        margin: 0 auto;
        padding: 0;
-       /*font-family: Times, serif;*/
        font-family: Georgia, serif;
-
        font-weight: 400;
        font-size: 16px;
 }
@@ -52,11 +50,6 @@ figcaption {
     margin-right: 20px;
     font-weight: bold;
 }
-
-/* letter */
-/*section#letter p {
-    font-size: 40px
-}*/
 
 /* resume */
 
@@ -129,14 +122,13 @@ dd  {
 .tech {
     font-size: 12px;
     margin-top: 0px;
-    /*margin: 0px 0px 12px;*/
 }
+
 .badge {
     display:inline-block;
     background-color: #cef;
     border-radius: 3px;
     border: 1px dotted #333;
-    /*border-left: 4px solid;*/
     padding: .25em .25em .25em;
     margin: 0px;
     margin-right: 4px;
